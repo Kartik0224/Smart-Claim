@@ -17,7 +17,7 @@
 
 ---
 
-## 📑 Table of Contents
+##  Table of Contents
 
 * [Overview](#-overview)
 * [Business Problems Solved](#-business-problems-solved)
@@ -118,7 +118,7 @@ Provides:
 
 ---
 
-## 📈 Incident Trend Analysis
+##  Incident Trend Analysis
 
 <p align="center">
 <img src="Dashboards&End_result/Screenshot 2026-02-19 191320.png" width="900">
