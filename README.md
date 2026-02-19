@@ -1,149 +1,187 @@
 ![](ProjectViz.gif)
-# Smart Claims Lakehouse — End-to-End Databricks Data Engineering & ML Project
 
-## Overview
+# 🚗 Smart Claims Lakehouse
 
-This project demonstrates a complete end-to-end modern data platform built on Databricks to support an intelligent insurance claims processing system. The solution integrates batch, streaming, and file-based data sources into a unified Lakehouse architecture and applies machine learning to automatically assess vehicle damage severity from uploaded images.
-
-The primary goal of the system is to create a single source of truth for customer, policy, telematics, and claims data while automating claim validation and improving decision-making through analytics and AI.
+## End-to-End Databricks Data Engineering + Machine Learning Insurance Platform
 
 ---
 
-## Business Problem
+## 🧭 Project Overview
 
-Insurance claim processing is traditionally manual, slow, and error-prone.
-This project solves two key challenges:
+Smart Claims Lakehouse is a production-style enterprise data platform built on Databricks that automates insurance claim processing using a unified Lakehouse architecture and AI-powered damage classification.
 
-* Consolidating enterprise data from multiple systems into one analytical platform
-* Automating claim verification using telematics data and computer vision
+The system integrates structured enterprise data, real-time vehicle telemetry streams, and accident images into a single scalable environment to enable automated validation, analytics reporting, and operational decision-making.
 
-The system validates whether:
-
-* The driver's recorded speed matches the accident report
-* The customer is eligible based on policy rules
-* The uploaded accident image matches the declared damage severity
+The platform transforms a traditionally manual insurance workflow into an intelligent automated claims system.
 
 ---
 
-## Architecture Highlights
+## 🎯 Business Problems Solved
 
-The platform follows a modern Lakehouse design using the Medallion Architecture:
+✔ Eliminates fragmented insurance data silos
+✔ Enables near real-time accident validation
+✔ Automates manual image damage inspection
+✔ Detects suspicious claims for investigation
+✔ Provides executive dashboards for risk monitoring
+
+---
+
+## 🏗️ System Architecture (Lakehouse Pipeline)
+
+<p align="center">
+  <img src="images/74f3bab2-f427-4c0f-b595-2e89aee66c8d.png" width="950">
+</p>
+
+The architecture integrates multiple enterprise data sources including relational databases, streaming telemetry feeds, and object storage containing accident images.
+
+Incoming data is processed through automated ingestion pipelines and stored in a Medallion Lakehouse:
 
 **Landing → Bronze → Silver → Gold**
 
-* Landing: Raw data ingestion
-* Bronze: Source-aligned structured Delta tables
-* Silver: Cleaned and validated datasets with data quality checks
-* Gold: Aggregated business-ready datasets for analytics and applications
+The curated datasets power dashboards, ML models, and operational applications.
 
 ---
 
-## Data Sources Integrated
+## 🧠 Automated Claims Decision Engine
 
-* SQL Server database (customers, claims, policies) using change data capture
-* Streaming telematics sensor data
-* Object storage containing accident images and metadata
+<p align="center">
+  <img src="images/Screenshot 2026-02-19 191707.png" width="900">
+</p>
 
-All ingestion pipelines are incremental and support real-time processing.
+The decision workflow combines business rule validation and machine learning inference:
 
----
+* Policy eligibility verification
+* Coverage validation
+* Telemetry speed analysis
+* Accident reconstruction
+* AI image severity prediction
 
-## Key Features Implemented
-
-### Data Engineering
-
-* Incremental database ingestion using CDC pipelines
-* Real-time stream processing for telematics data
-* Automated file ingestion from object storage
-* Schema evolution handling
-* Automated archiving of processed files
-
-### Data Transformation
-
-* Declarative ETL pipelines using Apache Spark
-* Built-in data quality validation rules
-* Automated type normalization and cleaning
-* Materialized business views for analytics
-
-### Machine Learning
-
-* Computer vision model trained to classify car damage severity
-* Experiment tracking and lifecycle management
-* Model registry and versioning
-* Batch and real-time inference support
-
-### Analytics & Applications
-
-* SQL warehouse reporting layer
-* Natural language data querying interface
-* Customer portal for claim submission
-* Admin dashboard for claim investigation
+Based on these checks, claims are automatically approved or flagged for manual investigation.
 
 ---
 
-## Technology Stack
+## 🧾 Customer Claim Submission Portal
 
-Databricks Lakehouse Platform • Apache Spark • Delta Lake • Python / PySpark • MLflow • Computer Vision (ResNet-based model) • Streaming pipelines • SQL analytics
+<p align="center">
+  <img src="images/Screenshot 2026-02-19 191540.png" width="850">
+</p>
 
----
-
-## System Architecture
-
-### End-to-End Lakehouse Architecture
-
-The architecture integrates multiple enterprise data sources including relational databases, streaming telematics feeds, and object storage containing accident images. Incoming data is processed through automated ingestion pipelines and stored in a Medallion Lakehouse consisting of Landing, Bronze, Silver, and Gold layers.
-
-Data validation, transformation, and incremental processing ensure reliability and scalability. The curated datasets power analytics dashboards, real-time applications, and a deployed machine learning model for automated claim verification.
+Customers upload accident images, policy details, and incident information through this operational interface.
+The portal connects directly with backend pipelines and deployed ML services for real-time claim analysis.
 
 ---
 
-## Automated Decision Engine
+## 🎉 Automated Claim Processing Output
 
-The claims validation pipeline combines structured business rules and machine learning inference. Policy eligibility, coverage limits, accident speed, and telematics data are validated alongside an AI-based image severity classifier.
+<p align="center">
+  <img src="images/Screenshot 2026-02-19 191935.png" width="850">
+</p>
 
-Based on these checks, the system automatically determines whether a claim qualifies for immediate approval or requires manual investigation.
-
----
-
-## Customer Claim Submission Portal
-
-The platform includes a customer-facing submission interface allowing users to upload accident images, enter policy details, and submit claims for automated analysis. This portal connects directly with backend pipelines and deployed ML services to enable near real-time processing.
+After evaluating image severity, policy coverage, telematics data, and financial checks, the system automatically generates claim decisions. Approved claims proceed automatically while suspicious cases are routed for investigation.
 
 ---
 
-## Analytics Dashboard
+## 📊 Insurance Analytics Dashboard
 
-Operational dashboards provide insights into insurance performance metrics such as loss ratios, incident distribution, severity classification, and financial impact. Interactive filtering enables stakeholders to monitor risk trends and business performance.
+<p align="center">
+  <img src="images/Screenshot 2026-02-19 191257.png" width="900">
+</p>
 
----
+The dashboard presents operational and financial insights such as:
 
-## Incident Trend Analysis
+* Loss ratio metrics
+* Liability exposure
+* Incident distribution by severity
+* Insurance performance tracking
 
-Aggregated visualizations highlight incident frequency, severity distribution, and temporal patterns throughout the day. These analytics support proactive risk management and operational planning.
-
----
-
-## Automated Claim Processing Output
-
-The system produces automated decision results after evaluating image severity, policy coverage, telematics validation, and financial checks. Approved claims are processed automatically, while suspicious cases are routed for manual review. This demonstrates the operational impact of integrating data engineering, analytics, and AI into one platform.
-
----
-
-## Outcomes
-
-This project showcases how to build a production-ready enterprise data and AI solution capable of:
-
-* Handling multi-source data ingestion
-* Supporting real-time analytics
-* Automating operational decision workflows
-* Deploying machine learning models into business applications
+These dashboards support executive-level monitoring and decision-making.
 
 ---
 
-## Ideal For
+## 📈 Incident Trend & Severity Analytics
 
-* Data Engineering portfolio projects
-* Machine Learning production pipeline demonstrations
-* Lakehouse architecture learning
-* End-to-end enterprise analytics solutions
+<p align="center">
+  <img src="images/Screenshot 2026-02-19 191320.png" width="900">
+</p>
 
+Aggregated visualizations reveal temporal incident patterns, severity distribution, and financial impact trends across accident categories.
+
+This enables proactive risk assessment and operational planning.
+
+---
+
+## 🔧 Technology Stack — Usage & Problem Solved
+
+### Databricks Lakehouse Platform
+
+Unified platform for ingestion pipelines, ETL processing, machine learning lifecycle, dashboards, and applications.
+**Solved:** Eliminated fragmented enterprise data systems.
+
+---
+
+### Apache Spark / PySpark
+
+Used for distributed ETL processing, joins, and streaming ingestion.
+**Solved:** Enabled scalable processing of large insurance datasets.
+
+---
+
+### Delta Lake
+
+Used as storage layer for Bronze, Silver, Gold tables with ACID guarantees.
+**Solved:** Ensured reliable incremental ingestion and prevented corruption.
+
+---
+
+### Lakeflow Pipelines
+
+Used for automated ingestion workflows and incremental ETL orchestration.
+**Solved:** Removed complex manual pipeline dependency management.
+
+---
+
+### Change Data Capture
+
+Used to incrementally sync SQL Server insurance tables.
+**Solved:** Avoided expensive full database reloads.
+
+---
+
+### Streaming Telemetry Processing
+
+Vehicle sensor data ingested continuously.
+**Solved:** Enabled real-time accident validation.
+
+---
+
+### MLflow + Deep Learning (Computer Vision)
+
+Used to train and deploy an image classifier predicting crash severity.
+**Solved:** Automated manual image inspection.
+
+---
+
+### SQL Analytics + BI Dashboards
+
+Gold datasets exposed for executive monitoring.
+**Solved:** Enabled real-time insurance performance insights.
+
+---
+
+## 🏆 Final Outcome
+
+This project demonstrates how to build a production-ready enterprise data and AI solution capable of:
+
+* Multi-source incremental ingestion
+* Real-time analytics processing
+* Automated insurance decision workflows
+* Production machine learning deployment
+
+---
+
+## 💼 Ideal For
+
+✔ Data Engineering portfolio
+✔ Machine Learning production pipelines
+✔ Enterprise Lakehouse architecture learning
+✔ Real-time analytics system design
