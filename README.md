@@ -26,7 +26,7 @@ The platform transforms a traditionally manual insurance workflow into an intell
 
 ---
 
-## 🏗️ System Architecture (Lakehouse Pipeline)
+##  System Architecture (Lakehouse Pipeline)
 
 <p align="center">
   <img src="Dashboards&End_result/Smart_claim architecture.png" width="950">
@@ -42,11 +42,7 @@ The curated datasets power dashboards, ML models, and operational applications.
 
 ---
 
-## 🧠 Automated Claims Decision Engine
-
-<p align="center">
-  <img src="Dashboards&End_result/Screenshot 2026-02-19 191707.png" width="900">
-</p>
+##  Automated Claims Decision Engine
 
 The decision workflow combines business rule validation and machine learning inference:
 
@@ -60,32 +56,20 @@ Based on these checks, claims are automatically approved or flagged for manual i
 
 ---
 
-## 🧾 Customer Claim Submission Portal
-
-<p align="center">
-  <img src="Dashboards&End_result/Screenshot 2026-02-19 191540.png" width="850">
-</p>
+##  Customer Claim Submission Portal
 
 Customers upload accident images, policy details, and incident information through this operational interface.
 The portal connects directly with backend pipelines and deployed ML services for real-time claim analysis.
 
 ---
 
-## 🎉 Automated Claim Processing Output
-
-<p align="center">
-  <img src="Dashboards&End_result/Screenshot 2026-02-19 191935.png" width="850">
-</p>
+##  Automated Claim Processing Output
 
 After evaluating image severity, policy coverage, telematics data, and financial checks, the system automatically generates claim decisions. Approved claims proceed automatically while suspicious cases are routed for investigation.
 
 ---
 
-## 📊 Insurance Analytics Dashboard
-
-<p align="center">
-  <img src="Dashboards&End_result/Screenshot 2026-02-19 191257.png" width="900">
-</p>
+## Insurance Analytics Dashboard
 
 The dashboard presents operational and financial insights such as:
 
@@ -98,11 +82,7 @@ These dashboards support executive-level monitoring and decision-making.
 
 ---
 
-## 📈 Incident Trend & Severity Analytics
-
-<p align="center">
-  <img src="Dashboards&End_result/Screenshot 2026-02-19 191320.png" width="900">
-</p>
+##  Incident Trend & Severity Analytics
 
 Aggregated visualizations reveal temporal incident patterns, severity distribution, and financial impact trends across accident categories.
 
@@ -110,7 +90,7 @@ This enables proactive risk assessment and operational planning.
 
 ---
 
-## 🔧 Technology Stack — Usage & Problem Solved
+##  Technology Stack — Usage & Problem Solved
 
 ### Databricks Lakehouse Platform
 
@@ -168,7 +148,7 @@ Gold datasets exposed for executive monitoring.
 
 ---
 
-## 🏆 Final Outcome
+##  Final Outcome
 
 This project demonstrates how to build a production-ready enterprise data and AI solution capable of:
 
@@ -178,10 +158,3 @@ This project demonstrates how to build a production-ready enterprise data and AI
 * Production machine learning deployment
 
 ---
-
-## 💼 Ideal For
-
-✔ Data Engineering portfolio
-✔ Machine Learning production pipelines
-✔ Enterprise Lakehouse architecture learning
-✔ Real-time analytics system design
