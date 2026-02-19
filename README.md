@@ -29,7 +29,7 @@ The platform transforms a traditionally manual insurance workflow into an intell
 ## 🏗️ System Architecture (Lakehouse Pipeline)
 
 <p align="center">
-  <img src="images/74f3bab2-f427-4c0f-b595-2e89aee66c8d.png" width="950">
+  <img src="Dashboards&End_result/image.png" width="950">
 </p>
 
 The architecture integrates multiple enterprise data sources including relational databases, streaming telemetry feeds, and object storage containing accident images.
