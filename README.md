@@ -6,7 +6,7 @@
 
 ---
 
-## 🧭 Project Overview
+##  Project Overview
 
 Smart Claims Lakehouse is a production-style enterprise data platform built on Databricks that automates insurance claim processing using a unified Lakehouse architecture and AI-powered damage classification.
 
@@ -16,7 +16,7 @@ The platform transforms a traditionally manual insurance workflow into an intell
 
 ---
 
-## 🎯 Business Problems Solved
+##  Business Problems Solved
 
 ✔ Eliminates fragmented insurance data silos
 ✔ Enables near real-time accident validation
@@ -29,7 +29,7 @@ The platform transforms a traditionally manual insurance workflow into an intell
 ## 🏗️ System Architecture (Lakehouse Pipeline)
 
 <p align="center">
-  <img src="Dashboards&End_result/image.png" width="950">
+  <img src="Dashboards&End_result/Smart_claim architecture.png" width="950">
 </p>
 
 The architecture integrates multiple enterprise data sources including relational databases, streaming telemetry feeds, and object storage containing accident images.
