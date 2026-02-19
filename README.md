@@ -45,7 +45,7 @@ The curated datasets power dashboards, ML models, and operational applications.
 ## 🧠 Automated Claims Decision Engine
 
 <p align="center">
-  <img src="images/Screenshot 2026-02-19 191707.png" width="900">
+  <img src="Dashboards&End_result/Screenshot 2026-02-19 191707.png" width="900">
 </p>
 
 The decision workflow combines business rule validation and machine learning inference:
@@ -63,7 +63,7 @@ Based on these checks, claims are automatically approved or flagged for manual i
 ## 🧾 Customer Claim Submission Portal
 
 <p align="center">
-  <img src="images/Screenshot 2026-02-19 191540.png" width="850">
+  <img src="Dashboards&End_result/Screenshot 2026-02-19 191540.png" width="850">
 </p>
 
 Customers upload accident images, policy details, and incident information through this operational interface.
@@ -74,7 +74,7 @@ The portal connects directly with backend pipelines and deployed ML services for
 ## 🎉 Automated Claim Processing Output
 
 <p align="center">
-  <img src="images/Screenshot 2026-02-19 191935.png" width="850">
+  <img src="Dashboards&End_result/Screenshot 2026-02-19 191935.png" width="850">
 </p>
 
 After evaluating image severity, policy coverage, telematics data, and financial checks, the system automatically generates claim decisions. Approved claims proceed automatically while suspicious cases are routed for investigation.
@@ -84,7 +84,7 @@ After evaluating image severity, policy coverage, telematics data, and financial
 ## 📊 Insurance Analytics Dashboard
 
 <p align="center">
-  <img src="images/Screenshot 2026-02-19 191257.png" width="900">
+  <img src="Dashboards&End_result/Screenshot 2026-02-19 191257.png" width="900">
 </p>
 
 The dashboard presents operational and financial insights such as:
@@ -101,7 +101,7 @@ These dashboards support executive-level monitoring and decision-making.
 ## 📈 Incident Trend & Severity Analytics
 
 <p align="center">
-  <img src="images/Screenshot 2026-02-19 191320.png" width="900">
+  <img src="Dashboards&End_result/Screenshot 2026-02-19 191320.png" width="900">
 </p>
 
 Aggregated visualizations reveal temporal incident patterns, severity distribution, and financial impact trends across accident categories.
